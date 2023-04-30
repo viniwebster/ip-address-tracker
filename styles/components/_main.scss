@@ -1,0 +1,92 @@
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    .container__tracker{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+        padding-top: 32px;
+        width: 100%;
+        height: 250px;
+        background-image: url('../../images/pattern-bg-desktop.png');
+        background-size: cover;
+        .title{
+            font-weight: 500;
+            color: white;
+            font-size: 2rem;
+        }
+        .container__tracker-input{
+            display: flex;
+            align-items: center;
+            width: 40vw;
+            #search{
+               width: 100%; 
+               padding: 1rem;
+               border-radius: 10px 0 0 10px;  
+               border: none;
+               outline: none;
+            }
+            .btn{
+                width: 50px;
+                height: 100%;
+                background-image: url('../../images/icon-arrow.svg');
+                background-size: 25%;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-color: $cor-cinza-escuro;
+                border-radius: 0 10px 10px 0;
+                border: none;
+                cursor: pointer;
+            }  
+            .btn:hover{
+                background-color: $cor-hover;
+            }
+        }
+        
+    }
+
+    .container__infos{
+        display: flex;
+        width: 80%;
+        padding: 1.5rem 0;
+        background-color: white;     
+        border-radius: 20px;
+        font-size: .9rem;
+        position: fixed;
+        top: 215px;
+        z-index: +55555;
+        box-shadow: 0px 50px 100px -50px black;
+        .container__infos-item{
+            flex: 1;
+            border-left: .2px solid $cor-cinza-claro;
+            padding: 0 32px 0 32px;
+            word-wrap: break-word;
+            word-break: break-all;
+            h4{
+                color: $cor-cinza-claro;
+                font-weight: 500;
+                text-transform: uppercase;
+                margin-bottom: 20px;
+            }
+            .infos{
+                font-size: 1.3rem;
+                font-weight: 500;  
+            }
+        }
+        .container__infos-item:nth-child(1){
+            border-left: none;
+        }
+    }
+    #map-bx{
+        flex: 1;
+      .container__image-map{        
+        height: 100%;
+        background-color: rgb(57, 109, 232);
+        /* background-image: url('/design/desktop-design.jpg'); */
+    }
+  
+    }
+    
+}

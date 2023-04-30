@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles/components/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+  integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+  crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+  integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+  crossorigin=""></script>
+
+  <title>Frontend Mentor | IP Address Tracker</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+
+  <main>
+
+
+  <section>
+    <div class="container">
+      <div class="container__tracker">
+        <h1 class="title">  IP Address Tracker</h1>
+        <div class="container__tracker-input">
+          <input type="search" id="search" placeholder="Search for any IP address or domain">
+          <button class="btn" id="btn"></button>
+        </div>
+
+        <div class="container__infos">
+          <div class="container__infos-item">
+            <h4> IP Address</h4>
+            <span class="infos" id="ip"><!-- 142.250.68.46 --></span>
+          </div>
+          <div class="container__infos-item">
+            <h4>Location</h4>
+            <span class="infos" id="location"><!-- Los Angeles, US --> <br>
+              <!-- 90001 --></span>
+          </div>
+          <div class="container__infos-item">
+            <h4>Timezone</h4>
+            <span class="infos" id="timezone"><!-- UTC -07:00 --></span>
+          </div>
+          <div class="container__infos-item">
+            <h4>ISP</h4>
+            <span class="infos" id="isp"><!-- Google LLC --></span>
+          </div>
+        </div>
+      </div>
+
+      <div id="map-bx">
+        <div id="map" class="container__image-map">
+        <!-- <img id="img" src="/design/desktop-design.jpg" alt="" srcset=""> -->
+        </div>
+      </div>
+      
+
+    </div>
+  </section>
+
+
+  </main>
+
+  <script src="/scripts/conectaApi.js" type="module"></script>
+  
+ <!--  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>
