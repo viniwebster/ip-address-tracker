@@ -47,6 +47,10 @@
 .container .container__tracker .container__tracker-input .btn:hover {
   background-color: rgb(80, 78, 78);
 }
+.container .container__tracker #erro {
+  color: rgb(255, 255, 255);
+  font-size: 1.2rem;
+}
 .container .container__infos {
   display: flex;
   width: 80%;
